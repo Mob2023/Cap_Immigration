@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cap Immigration</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- Section Accueil -->
+  <section id="accueil" class="hero fade-in">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Cap Immigration</h1>
+      <p>Votre partenaire fiable et rapide pour une immigration réussie</p>
+      <button onclick="scrollToForm()">S’inscrire maintenant</button>
+    </div>
+  </section>
+
+  <!-- Section Formulaire -->
+  <section id="formulaire" class="form-section fade-in">
+    <h2>Formulaire d'inscription</h2>
+    <form name="inscription" method="POST" data-netlify="true">
+      <div class="form-group">
+        <label>Civilité :</label>
+        <select name="civilite" required>
+          <option value="">Choisir</option>
+          <option value="M.">M.</option>
+          <option value="Mme">Mme</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Nom et Prénom :</label>
+        <input type="text" name="nom_prenom" required />
+      </div>
+
+      <div class="form-group">
+        <label>Date de naissance :</label>
+        <input type="date" name="date_naissance" required />
+      </div>
+
+      <div class="form-group">
+        <label>Numéro WhatsApp :</label>
+        <input type="tel" name="whatsapp" placeholder="+225..." required />
+      </div>
+
+      <div class="form-group">
+        <label>Adresse e-mail :</label>
+        <input type="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label>Décrire le but de la demande :</label>
+        <textarea name="but_demande" rows="3" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Niveau d’étude :</label>
+        <input type="text" name="niveau_etude" required />
+      </div>
+
+      <div class="form-group">
+        <label>Expérience professionnelle :</label>
+        <input type="text" name="experience" required />
+      </div>
+
+      <div class="form-group">
+        <label>Mode de paiement préféré :</label>
+        <select name="paiement" required>
+          <option value="">Choisir</option>
+          <option value="Carte de crédit">Carte de crédit</option>
+          <option value="Orange Money">Orange Money</option>
+          <option value="Wave">Wave</option>
+        </select>
+      </div>
+
+      <div class="checkboxes">
+        <label><input type="checkbox" required /> J’accepte les cookies</label>
+        <label><input type="checkbox" required /> J’accepte de partager mes informations</label>
+        <label><input type="checkbox" required /> J’accepte de payer les frais d’inscription</label>
+      </div>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Section Témoignages -->
+  <section id="temoignages" class="testimonials fade-in">
+    <h2>+1300 clients satisfaits</h2>
+    <div class="cards">
+      <div class="card fade-in">“Grâce à Cap Immigration, j’ai obtenu mon visa pour le Canada rapidement.” – A. Koné</div>
+      <div class="card fade-in">“Service professionnel et équipe très réactive.” – M. Traoré</div>
+      <div class="card fade-in">“Je recommande à tous ceux qui veulent immigrer sans stress.” – S. Diabaté</div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>© 2025 Cap Immigration | Contact : <a href="mailto:cap_immigration@hotmail.com">cap_immigration@hotmail.com</a></p>
+  </footer>
+</body>
+</html>
